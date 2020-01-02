@@ -18,35 +18,66 @@ Why
     # The average family of four could save £70 per month by reducing their food waste.
 
    The solution
-   # A BBC article recommends a three prong approach to reducing food waste one of which is meal planning
+   # There are many things that can be done to reduce waste but our project assists with: meal planning and using leftovers
    # Using up food is a current issue / on peoples' minds
-   # Market research on social media when pooling ideas for our project
+   # Market research on social media when pooling ideas for our project came up with:
    #"recipe suggestions for the random ingredients I have that need using up" and "I've tried many times to find that kind of thing based on the random mushroom anchovy broccoli ingredients I have lying around"
 
    The decision
-   # We had a couple of feasible ideas and took a democratic vote (having consulted with James)
-   # We chose a project that we felt the general public could identify with
+   # We considered:
+   # whether our audience would understand what we were trying to deliver
+   # any commercial viability
+   # ease of build and whether we understood the technology
+   # would it showcase all our skills
+   # could we make it look good
+   # could it split down into chunks so that we could do a phased delivery
    # Our project also required accessing a third party API which we didn't do on the course - we wanted that challenge.
+   # We had a couple of feasible ideas and took a democratic vote (having consulted with James)
 
-   */
-HOW / THE STORY
-    Any wireframing
+   
+How - Our Story
+   # We quickly assigned responsibilites (based on personal preference), 2 on back-end, 2 on front
+   # Communication was done mostly via Slack with some physical meet ups (with cookies)
+   # The first step was ensure that a third party recipe API we had found would allow us to deliver something
+   # We built a proof of concept in React that accessed Edamam succesfully - great - now fully committed to our idea
+   # Front end could progress
+   # Meanwhile the back-end team carried out a quick study  on other APIs to make sure we were using the most appropriate
+   # It was also important to show that we could create a database and build an API to access that so the back team worked on that aspect.
+
+   API Selection
+   # We assessed around 8 recipe APIs
+   # A couple we were able to discount as they were being decommissioned
+   # We discounted (for now) anything we had to pay for!
+   # Since we had started with Edamam (and assessed that as suitable) we discounted anything that had less functionality
+   # In the end the only real contender was Spoonacular which we unanimously agreed to discount as it was more fiddly to use (and required a double pass to get data we wanted) and threatened to put our timescales at risk.
+   # Spoonacular should be considered if we further developed as it appeared to access more data of a better quality.
+   # We had to rememeber we were developing a minimum viable product.
+
+   
     Meeting photos
-    How worked as a  team
-
+    How worked as a team
     Communication
     Responsibilites
     Processes
+    Git
     
-    How methodologies
 
     How technologies – one slide
 
     How tools
-
+    
+    Story Map
+    
     Challenges / lessons learned
+    # Christmas
+    # General family/school/job balancing
+    # The API accesses third party websites so data quality can be inconsistent
 
     Future road map
+    # move external api call to backend (currently calling from frontend) so that
+       a) the api key and api id are not passed in plain text
+       b) we can improve performance by building a proxy to get around cors-anywhere issue.
+    # review the API used
 
     Accessibility
 

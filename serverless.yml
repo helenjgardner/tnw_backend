@@ -2,8 +2,8 @@
 
 service: tnw-backend
 
-app: Taste Not Waste
-org: TR_Bees
+# app: Taste Not Waste
+# org: TR_Bees
 
 provider:
   name: aws

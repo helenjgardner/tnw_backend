@@ -22,10 +22,10 @@ functions:
           path: favourite
           method: get
           cors: true
-#      - http:
-#          path: tasks
-#          method: post
-#          cors: true
+      - http:
+          path: tasks
+          method: post
+          cors: true
 #      - http:
 #          path: tasks/{taskId}
 #          method: delete

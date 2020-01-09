@@ -31,3 +31,22 @@ app.get("/favourite", function (request, response) {
     }
   });
 });
+
+// note user name is hardcoded to The Pretender
+app.post("/favourite", function (request, response) {
+  const recipeURL = request.body.recipeURL;
+  const query = "INSERT INTO favourite (recipeURL, username) VALUES (?, ?)";
+  connection.query(query, [recipeURL, "The_Pretender"], function (err, results, fields) {
+    if (err) {
+      console.log("Error fetching task", err);
+      response.status(500).json({
+        error: err
+      });
+    } else {
+      // respond with task id
+      response.status(201).json({
+        recipeURL
+      });
+    }
+  });
+});
